@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lines{
+  display: flex;
+  flex-direction: column;
+}
+
+.line{
+  display: flex;
+  flex-direction: row;
+}
+
+.letterSquare{
+  user-select: none;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  border: solid 1px white;
+  margin: 4px;
+}
+
+.currentLine{
+  background-color: gray;
+}
+
+.correctLetter{
+  background-color: darkgreen;
+}
+
+.letterInIncorrectPosition{
+  background-color: darkkhaki;
+}
+
+.badWordLine{
+  background-color: darkred;
+}
